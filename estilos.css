@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #4c4e61;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
+
+.container {
+  margin: 3rem 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+@media (min-width: 1440px) {
+  .container .first-p {
+    width: 35%;
+    margin: auto;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: max-content max-content max-content max-content;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  grid-gap: 10px;
+}
+
+.grid-container p {
+  font-size: 16px;
+}
+
+.grid-item {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.75);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+.grid-item-1 {
+  border-top: 4px solid #45d3d3;
+}
+
+.grid-item-2 {
+  border-top: 4px solid #ea5353;
+}
+
+.grid-item-3 {
+  border-top: 4px solid #fcaf4a;
+}
+
+.grid-item-4 {
+  border-top: 4px solid #549ef2;
+}
+
+@media (min-width: 1440px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    grid-gap: 30px;
+  }
+
+  .grid-item-1 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+
+  .grid-item-2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .grid-item-3 {
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+
+  .grid-item-4 {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+}
+
+footer{
+  text-align: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */
